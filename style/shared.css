@@ -1,0 +1,129 @@
+:root {
+    --bg: #f4f7fb;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --accent: #0f766e;
+    --accent-strong: #115e59;
+    --border: #dbe4f3;
+    --shadow: 0 24px 48px -28px rgba(15, 23, 42, 0.35);
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    background:
+        radial-gradient(circle at top right, #d7e8ff 0%, transparent 40%),
+        radial-gradient(circle at bottom left, #d6f3e7 0%, transparent 35%),
+        var(--bg);
+    color: var(--text);
+    overflow: hidden; /* for animations */
+}
+
+.home {
+    min-height: 100vh;
+    padding: 1.25rem;
+    display: grid;
+    place-items: center;
+}
+
+.hero {
+    width: min(640px, 100%);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.counter {
+    display: grid;
+    gap: 0.25rem;
+    justify-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.counter-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+}
+
+.counter-value {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid transparent;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition:
+        transform 140ms ease,
+        background-color 140ms ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-strong);
+}
+
+.btn-ghost {
+    border-color: var(--border);
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+@keyframes rotate-in {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+.page-transition {
+    animation: rotate-in 250ms ease both;
+}
