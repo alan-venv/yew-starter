@@ -1,10 +1,6 @@
 # Yew Starter Template
 A base template to quickly start new web projects with **Rust + Yew**.
 
-## Requirements
-- Rust
-- Trunk
-
 **Trunk Setup**
 ```bash
 cargo install trunk
