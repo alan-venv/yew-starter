@@ -1,3 +1,7 @@
+---
+title: Creating Properties
+---
+
 ## Creating Properties
 
 Properties ("Props") are component arguments that Yew watches for changes during re-rendering. To define props for function components, create a struct with `#[derive(Properties, PartialEq)]` and receive it by reference in the component function.
@@ -25,7 +29,7 @@ fn Greeting(props: &GreetingProps) -> Html {
 
 #[component]
 fn App() -> Html {
-    html! { <Greeting name="Sam" /> }
+    html! { <Greeting name="Alan" /> }
 }
 ```
 

@@ -3,13 +3,10 @@
 ## TL;DR
 - This is a basic Yew starter template for quickly bootstrapping new ideas.
 
-## Rules
-- Follow the rules in `rules/`.
-
 ## Guidelines
 - Do not add new dependencies unless explicitly requested.
-- After any code change, compile the project and fix build errors before considering the work done (for example, run `cargo build`).
-- Keep `AGENTS.md` lean and summarized: describe behavior/actions at a high level, and avoid references to code identifiers (functions/structs/modules) unless strictly necessary.
+- After any code change, compile the project and fix any build errors before considering the work done. (e.g. `cargo build`).
+- Keep `AGENTS.md` lean and summarized: describe behavior/actions at a high level, and avoid references to code identifiers.
 
 ## Project Structure
 - `src/main.rs`: routing setup with yew-router and app entrypoint.
@@ -20,4 +17,3 @@
 - `static/`: static assets.
 - `docs/`: project documentation and study notes.
 - `index.html`: trunk entrypoint.
-- `rules/*.md`: project rules and conventions to follow.

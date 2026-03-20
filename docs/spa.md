@@ -1,31 +1,29 @@
 # Single Page Application (SPA)
 
-## O que é
+A SPA is a web application that loads a single HTML page and updates its content dynamically through JavaScript (or WebAssembly), without reloading the entire page on every navigation. The browser becomes the application's runtime, while the server is reduced to acting mainly as a data API.
 
-Uma SPA é uma aplicação web que carrega uma única página HTML e atualiza o conteúdo dinamicamente via JavaScript (ou WebAssembly), sem recarregar a página inteira a cada navegação. O browser assume o papel de runtime da aplicação enquanto o servidor passa a ser apenas uma API de dados.
+In the traditional model, a Multi Page Application (MPA), every user interaction triggers a full HTTP cycle: a request to the server, HTML rendering on the backend, and a response containing an entirely new page. In a SPA, the server delivers the application once, and all subsequent navigation happens on the client side.
 
-No modelo tradicional (Multi Page Application), cada interação do usuário dispara um ciclo HTTP completo: request ao servidor, renderização do HTML no backend, e resposta com uma página inteira nova. Na SPA, o servidor entrega a aplicação uma vez e toda navegação subsequente acontece no client.
+## What the SPA model makes possible
 
-## Possibilidades que o modelo SPA abre
-
-- **Estado persistente entre views** -- um player de música que continua tocando enquanto o usuário navega (Spotify Web), ou um chat aberto em qualquer página (Intercom).
-- **Atualizações em tempo real** -- dashboards com WebSocket que atualizam dados sem refresh (Grafana, Figma colaborativo).
-- **Interações offline** -- com Service Workers, a aplicação pode funcionar sem conexão e sincronizar depois (Google Docs, Notion).
-- **Transições e animações contínuas** -- arrastar itens entre listas (Trello), reordenar elementos com drag-and-drop, canvas interativos.
-- **Lazy loading granular** -- carregar módulos sob demanda conforme o usuário navega, ao invés de tudo de uma vez.
+- **Persistent state across views** -- a music player that keeps playing while the user navigates (Spotify Web), or a chat widget that stays open on any page (Intercom).
+- **Real-time updates** -- dashboards using WebSockets to refresh data without a page reload (Grafana, collaborative Figma).
+- **Offline interactions** -- with Service Workers, the application can work without a connection and sync later (Google Docs, Notion).
+- **Continuous transitions and animations** -- dragging items between lists (Trello), reordering elements with drag-and-drop, or using interactive canvases.
+- **Granular lazy loading** -- loading modules on demand as the user navigates, instead of shipping everything upfront.
 
 ## SPA vs MPA
 
-| Aspecto | SPA | MPA (tradicional) |
-|---|---|---|
-| Navegação | Client-side (History API) | Server-side (reload completo) |
-| Estado | Persiste entre rotas | Perdido a cada request |
-| Servidor | API de dados | Renderiza HTML |
-| Primeira carga | Mais pesada | Mais leve |
-| Navegações seguintes | Instantâneas | Novo ciclo HTTP |
-| SEO | Requer SSR/prerender | Nativo |
-| Offline | Possível (Service Workers) | Não viável |
+| Aspect                | SPA                        | Traditional MPA           |
+|-----------------------|----------------------------|---------------------------|
+| Navigation            | Client-side (History API)  | Server-side (full reload) |
+| State                 | Persists across routes     | Lost on every request     |
+| Server                | Data API                   | Renders HTML              |
+| Initial load          | Heavier                    | Lighter                   |
+| Subsequent navigation | Instant                    | New HTTP cycle            |
+| SEO                   | Requires SSR/prerendering  | Native                    |
+| Offline               | Possible (Service Workers) | Not practical             |
 
-## WASM como diferencial
+## WASM as a differentiator
 
-WebAssembly adiciona uma camada extra à SPA: performance próxima de nativo no browser. Aplicações que antes exigiam desktop agora rodam no browser com performance viável -- editores de imagem, ferramentas CAD, processamento pesado de dados. Frameworks como Yew permitem construir SPAs em Rust compilando para WASM, combinando segurança de memória com performance.
+WebAssembly adds another layer to the SPA model: near-native performance in the browser. Applications that once required desktop environments can now run in the browser with practical performance, including image editors, CAD tools, and heavy data-processing workflows. Frameworks like Yew make it possible to build SPAs in Rust compiled to WASM, combining memory safety with strong performance.

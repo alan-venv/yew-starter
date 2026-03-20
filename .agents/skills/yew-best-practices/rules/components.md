@@ -1,3 +1,7 @@
+---
+title: Creating Function Components
+---
+
 ## Creating Function Components
 
 To create a function component add the `#[component]` attribute to a function. By convention, the function is named in PascalCase, like all components, to contrast its use to normal html elements inside the html! macro.
