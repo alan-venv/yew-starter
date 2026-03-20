@@ -5,18 +5,18 @@ A base template to quickly start new web projects with **Rust + Yew**.
 - Rust
 - Trunk
 
-### Trunk Setup:
+**Trunk Setup**
 ```bash
 cargo install trunk
 rustup target add wasm32-unknown-unknown
 ```
 
-### Local Execution
+**Local Execution**
 ```bash
 trunk serve --open
 ```
 
-### Production build
+**Production build**
 ```bash
 trunk build --release
 ```
