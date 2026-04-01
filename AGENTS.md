@@ -5,7 +5,7 @@
 
 ## Guidelines
 - Do not add new dependencies unless explicitly requested.
-- After any code change, compile the project and fix any build errors before considering the work done. (e.g. `cargo build`).
+- After any code change, run `cargo test` and fix any build or test errors before considering the work done.
 - Keep `AGENTS.md` lean and summarized: describe behavior/actions at a high level, and avoid references to code identifiers.
 
 ## Project Structure
