@@ -1,6 +1,8 @@
 # Yew Starter Template
 A base template to quickly start new web projects with **Rust + Yew**.
 
+## Commands
+
 **Trunk Setup**
 ```bash
 cargo install trunk
@@ -18,4 +20,6 @@ trunk build --release
 ```
 
 ## Suggested initial prompt
-- `Give me a quick summary of the codebase`
+```
+Give me a quick summary of the codebase
+```
