@@ -1,12 +1,13 @@
 # Yew Starter Template
+
 A base template to quickly start new web projects with **Rust + Yew**.
 
 ## Commands
 
-**Trunk Setup**
+**Setup**
 ```bash
-cargo install trunk
 rustup target add wasm32-unknown-unknown
+cargo install --locked trunk
 ```
 
 **Local Execution**

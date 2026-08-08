@@ -4,7 +4,7 @@ title: Making HTTP Requests
 
 ## Making HTTP Requests
 
-Use `gloo_net::http::Request` to make HTTP requests from Yew components. Since all requests are async, they must run inside `spawn_local` — see the `async-actions` rule for details.
+Use `gloo_net::http::Request` to make HTTP requests from Yew components. Since all requests are async, they must run inside `spawn_local` — see the `async-actions` guide for details.
 
 Use `.json(&body)` to serialize a request body and `.json::<T>().await` to deserialize a response. Add `gloo-net` with the `http` feature and `serde` with `derive` to `Cargo.toml`.
 

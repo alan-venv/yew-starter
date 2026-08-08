@@ -5,25 +5,27 @@ description: Yew guidelines. This skill should be used when writing, reviewing, 
 
 # Yew Best Practices
 
-Comprehensive guide for Yew applications. Contains 6 rules for code generation and automated refactoring.
+Comprehensive guide for Yew applications. Contains 7 reference guides for code generation and automated refactoring.
 
-## Rules
+## Guides
 - `components` - To create a function component.
 - `properties` - To create properties for function components.
 - `events` - To handle events in components.
 - `async-actions` - To run async code inside components and event callbacks.
 - `http-requests` - To make HTTP requests from components.
 - `local-storage` - To read and write data in localStorage.
+- `fonts` - To load local fonts consistently in Trunk/Yew applications.
 
 ## How to Use
 
-Read individual rule files for detailed explanations and code examples:
+Read individual reference files for detailed explanations and code examples:
 
 ```
-rules/components.md
-rules/properties.md
-rules/events.md
-rules/async-actions.md
-rules/http-requests.md
-rules/local-storage.md
+references/components.md
+references/properties.md
+references/events.md
+references/async-actions.md
+references/http-requests.md
+references/local-storage.md
+references/fonts.md
 ```
