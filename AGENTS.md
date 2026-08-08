@@ -1,6 +1,6 @@
 # AGENTS
 
-This is a basic Yew starter template for quickly bootstrapping new ideas.
+A minimal starter template for building client-side web applications with Rust and Yew.
 
 ## Guidelines
 
@@ -10,11 +10,9 @@ This is a basic Yew starter template for quickly bootstrapping new ideas.
 
 ## Project Structure
 
-- `src/main.rs`: routing setup with yew-router and app entrypoint.
-- `src/pages/`: page modules.
-- `src/components/`: shared reusable components.
-- `style/reset.css`: global css reset.
-- `style/shared.css`: shared page styles and animations.
+- `src/`: application code, pages, components, and routing.
+- `style/`: application stylesheets.
 - `static/`: static assets.
 - `docs/`: project documentation and study notes.
-- `index.html`: trunk entrypoint.
+- `docker/`: production container and server configuration.
+- `index.html`: Trunk entrypoint.

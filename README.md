@@ -1,6 +1,6 @@
 # Yew Starter Template
 
-A base template to quickly start new web projects with **Rust + Yew**.
+A minimal starter template for building client-side web applications with Rust and Yew.
 
 ## Commands
 
