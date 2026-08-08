@@ -9,6 +9,13 @@ body {
     height: 100%;
 }
 
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
 ul,
 ol {
     list-style: none;
