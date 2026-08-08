@@ -2,20 +2,21 @@
 
 A minimal starter template for building client-side web applications with Rust and Yew.
 
-## Commands
+## Setup
 
-**Setup**
 ```bash
 rustup target add wasm32-unknown-unknown
 cargo install --locked trunk
 ```
 
-**Local Execution**
+## Local development
+
 ```bash
 trunk serve --open
 ```
 
-**Production build**
+## Production build
+
 ```bash
 trunk build --release
 ```
